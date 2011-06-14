@@ -30,11 +30,18 @@ setup(name=PKG,
       description="library for OAuth version 1.0",
       author="Joe Stump",
       author_email="joe@simplegeo.com",
+      maintainer="Zac Bowling",
+      maintainer_email="zac@zacbowling.com",
       url="http://github.com/simplegeo/python-oauth2",
       packages = find_packages(),
       install_requires = ['httplib2'],
       license = "MIT License",
       keywords="oauth",
       zip_safe = True,
-      test_suite="tests",
-      tests_require=['coverage', 'mock'])
+      tests_require=['nose', 'coverage', 'mox'],
+      classifiers=[
+          'Intended Audience :: Developers',
+          'Development Status :: 5 - Stable',
+          'Programming Language :: Python',
+      ]
+)
